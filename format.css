@@ -1,0 +1,30 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.pfp {
+  border-radius: 15px;
+  border: 5px solid;
+  border-color: var(--teal);
+}
+
+.pfp-format {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: lightsteelblue;
+}
+nav .navbar {
+  display: flex;
+  list-style: none;
+}
+
+nav .nav-item {
+  padding-left: 50px;
+  font-size: 25px;
+}

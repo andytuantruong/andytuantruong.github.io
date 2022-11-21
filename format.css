@@ -1,6 +1,9 @@
-body {
-  padding: 0;
-  margin: 0;
+.back {
+  background: lightblue;
+}
+
+.nav-looks {
+  background-color: lightsteelblue;
 }
 .pfp {
   border-radius: 15px;
@@ -12,22 +15,17 @@ body {
 .pfp-format {
   display: flex;
   justify-content: left;
-  margin-left: 75px;
+  margin-left: 80px;
 }
 
-nav {
-  display: flex;
-  justify-content: left;
-  padding: 10px;
-  padding-right: 175px;
-  background-color: lightsteelblue;
-}
-nav .navbar {
-  display: flex;
-  list-style: none;
+.courses {
+  margin-left: 100px;
+  margin-top: 25px;
+  float: left;
 }
 
-nav .nav-item {
-  padding-left: 50px;
-  font-size: 25px;
+.skills {
+  margin-left: 100px;
+  margin-top: 25px;
+  float: left;
 }

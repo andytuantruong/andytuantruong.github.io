@@ -6,17 +6,20 @@ body {
   border-radius: 15px;
   border: 5px solid;
   border-color: var(--teal);
+  margin-bottom: 100px;
 }
 
 .pfp-format {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 75px;
 }
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 10px;
+  padding-right: 175px;
   background-color: lightsteelblue;
 }
 nav .navbar {

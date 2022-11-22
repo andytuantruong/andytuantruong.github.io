@@ -2,9 +2,33 @@
   background: lightblue;
 }
 
-.nav-looks {
-  background-color: lightsteelblue;
+.nav-container {
+  justify-content: left;
+  padding: 10px;
+  padding-top: 25px;
 }
+
+.navigation-bar {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: left;
+  padding-top: 25px;
+  background-color: lightsteelblue;
+  padding-bottom: 25px;
+}
+
+.item-nav {
+  display: inline;
+  padding-left: 5px;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.page {
+  text-decoration: none;
+}
+
 .pfp {
   border-radius: 15px;
   border: 5px solid;

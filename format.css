@@ -1,5 +1,5 @@
 .back {
-  background: lightblue;
+  background: #181a1b;
 }
 
 /* navbar */
@@ -15,7 +15,7 @@
   list-style: none;
   justify-content: left;
   padding-top: 25px;
-  background-color: lightsteelblue;
+  background-color: #212425;
   padding-bottom: 25px;
 }
 
@@ -29,6 +29,7 @@
 .page {
   text-decoration: none;
   padding-left: 50px;
+  color: white;
 }
 
 /* about */
@@ -38,17 +39,19 @@
   padding-right: 25px;
   */
   justify-content: center;
+  color: white;
 }
 
 .pfp {
   border-radius: 15px;
   border: 5px solid;
-  border-color: var(--teal);
+  border-color: #121212;
   margin-bottom: 10px;
 }
 
 .pfp-format {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-left: 80px;
   margin-right: 25px;
@@ -56,13 +59,14 @@
 
 .bio {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 80px;
   margin-right: 25px;
   text-align: left;
   padding: 15px;
   background-color: #e2f8fb;
   border: 5px solid;
-  border-color: var(--teal);
+  border-color: #121212;
   border-radius: 15px;
 }
 
@@ -125,3 +129,7 @@
   padding-bottom: 17px;
 }
 /* contact */
+.message-in {
+  height: 200px;
+  margin-bottom: 50px;
+}

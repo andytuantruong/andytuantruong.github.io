@@ -30,17 +30,37 @@
   padding-left: 50px;
 }
 
+.intro {
+  /*
+  text-align: right;
+  padding-right: 25px;
+  */
+}
+
 .pfp {
   border-radius: 15px;
   border: 5px solid;
   border-color: var(--teal);
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 .pfp-format {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   margin-left: 80px;
+  margin-right: 25px;
+}
+
+.bio {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 25px;
+  text-align: left;
+  padding-left: 10px;
+  background-color: #e2f8fb;
+  border: 5px solid;
+  border-color: var(--teal);
+  border-radius: 15px;
 }
 
 .experience {

@@ -42,32 +42,49 @@
   color: white;
 }
 
-.pfp {
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.socials-container {
+  display: flex;
+  background: white;
+  width: 280px;
+  height: 50px;
+  margin: 10px;
   border-radius: 15px;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.socials {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.pfp {
+  height: 400px;
+  width: 300px;
+  border-radius: 15px;
+  margin-right: 50px;
   border: 5px solid;
   border-color: #121212;
   margin-bottom: 10px;
-}
-
-.pfp-format {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 80px;
-  margin-right: 25px;
+  justify-content: left;
 }
 
 .bio {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 80px;
-  margin-right: 25px;
   text-align: left;
   padding: 15px;
   background-color: #e2f8fb;
   border: 5px solid;
   border-color: #121212;
   border-radius: 15px;
+  width: 500px;
 }
 
 /*Course/Skills */

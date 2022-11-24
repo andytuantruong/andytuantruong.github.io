@@ -128,8 +128,43 @@
   margin-top: 10px;
   padding-bottom: 17px;
 }
+
+/* projects*/
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.card {
+  background: white;
+  width: 270px;
+  height: 475px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.card:hover {
+  background-color: yellow;
+}
+
+.card-img1 {
+  height: 175px;
+  width: 275px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+.card-text1 {
+  font-size: 12pt;
+  margin: 5px 20px 0px;
+}
+.card-link1 {
+  text-decoration: none;
+  color: black;
+}
+
 /* contact */
 .message-in {
   height: 200px;
-  margin-bottom: 50px;
+  margin-top: 10px;
 }

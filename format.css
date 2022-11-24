@@ -46,23 +46,22 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+.socials {
+  display: flex;
+  background: white;
+  height: 70px;
+  margin: 10px 15px;
+  padding: 10px;
+  border: 5px solid;
+  border-color: #121212;
+  border-radius: 10px;
 }
 
 .socials-container {
   display: flex;
-  background: white;
-  width: 280px;
-  height: 50px;
-  margin: 10px;
-  border-radius: 15px;
-  padding-left: 25px;
-  padding-top: 10px;
-}
-
-.socials {
-  padding-left: 25px;
-  padding-top: 10px;
 }
 
 .pfp {

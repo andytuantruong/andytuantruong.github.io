@@ -61,6 +61,16 @@
   border-radius: 10px;
 }
 
+.new-box {
+  display: flex;
+  text-align: left;
+  padding: 15px;
+  background-color: #e2f8fb;
+  border: 5px solid;
+  border-color: #121212;
+  border-radius: 15px;
+  width: 300px;
+}
 .socials-container {
   display: flex;
 }
@@ -85,14 +95,18 @@
   border-color: #121212;
   border-radius: 15px;
   width: 400px;
+  margin-right: 10px;
 }
 
-/*Course/Skills */
-.experience {
-  margin-left: 10px;
-  margin-right: 22px;
-  margin-top: 25px;
-  float: left;
+/* Resume */
+.res-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.work {
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 
 .work-des-container {
@@ -111,32 +125,26 @@
 
 .courses {
   font-size: 15px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-right: 29px;
-  float: left;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 
 .skills {
   font-size: 15px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-right: 4px;
-  float: left;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 
 .education {
-  margin-left: 10px;
-  margin-right: 19px;
-  margin-top: 25px;
-  float: left;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 .edu-des {
   font-size: 15px;
   margin-left: 25px;
   margin-top: 10px;
   margin-bottom: 17px;
-  margin-right: 64px;
+  margin-right: 71px;
 }
 .edu-des-container {
   font-size: 15px;

@@ -15,7 +15,7 @@ function form_submit(event) {
     console.group('========= Form Submission =========');
 
     if (!isNaN(form.firstname.value)) console.log('First name: no submission');
-    else console.log('Firstname: ' + form.firstname.value);
+    else console.log('First name: ' + form.firstname.value);
 
     if (!isNaN(form.lastname.value)) console.log('Last name: no submission');
     else console.log('Last name: ' + form.lastname.value);

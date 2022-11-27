@@ -34,10 +34,6 @@
 
 /* about */
 .intro {
-  /*
-  text-align: right;
-  padding-right: 25px;
-  */
   justify-content: center;
   color: white;
 }
@@ -66,16 +62,6 @@
   width: 40px;
 }
 
-.new-box {
-  display: flex;
-  text-align: left;
-  padding: 15px;
-  background-color: #e2f8fb;
-  border: 5px solid;
-  border-color: #121212;
-  border-radius: 15px;
-  width: 300px;
-}
 .socials-container {
   display: flex;
 }
@@ -95,7 +81,7 @@
   display: flex;
   text-align: left;
   padding: 15px;
-  background-color: #e2f8fb;
+  background-color: white;
   border: 5px solid;
   border-color: #121212;
   border-radius: 15px;

@@ -189,6 +189,104 @@
 
 /* contact */
 .message-in {
-  height: 200px;
-  margin-top: 10px;
+  width: 200px;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  margin-top: 15px;
+}
+
+.form-body {
+  text-align: center;
+}
+
+.reg-form {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: thin;
+  border-color: lightgrey;
+  background-color: white;
+  padding: 10px;
+}
+
+.fill {
+  margin-bottom: 30px;
+}
+
+.space {
+  margin-bottom: 15px;
+}
+
+.text-box {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.type-i {
+  display: inline-block;
+  width: 67%;
+}
+
+.feedback {
+  font-weight: bold;
+  text-align: left;
+  font-size: 18px;
+  padding: 0;
+}
+
+.r-btn {
+  display: block;
+  text-align: left;
+  margin-left: 26px;
+}
+
+.prim-btn {
+  background-color: var(--green);
+  font-family: sans-serif;
+  color: white;
+  font-size: 12pt;
+  border-radius: 2px;
+  width: 185px;
+  height: 40px;
+  border-color: green;
+  border-style: solid;
+  border-width: thin;
+}
+
+.sec-btn {
+  background-color: white;
+  font-family: sans-serif;
+  color: green;
+  font-size: 12pt;
+  border-radius: 2px;
+  width: 185px;
+  height: 40px;
+  border-color: green;
+  border-style: solid;
+  border-width: thin;
+}
+
+.prim-btn:hover {
+  background-color: orange;
+  border-color: black;
+  color: black;
+}
+
+.sec-btn:hover {
+  background-color: lightgreen;
+  border-color: black;
+  color: green;
+}
+.bottom {
+  margin-bottom: 2em;
+}
+
+fieldset {
+  border: 0;
 }

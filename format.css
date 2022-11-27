@@ -154,6 +154,15 @@
   padding-bottom: 17px;
 }
 
+@media (min-width: 1045px) {
+  .res-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-left: 5px;
+  }
+}
+
 /* projects*/
 .project-container {
   display: flex;

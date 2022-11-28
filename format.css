@@ -1,34 +1,25 @@
 .back {
   background: #181a1b;
 }
-
 /* navbar */
-.nav-container {
-  justify-content: left;
-  padding: 10px;
-  padding-top: 25px;
-}
 
 .navigation-bar {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
   justify-content: left;
-  padding-top: 25px;
-  background-color: #212425;
-  padding-bottom: 25px;
+  background-color: #242424;
+  padding: 25px;
+  flex-wrap: wrap;
 }
 
 .item-nav {
   display: inline;
-  padding-left: 5px;
-  font-size: 20px;
-  margin-right: 25px;
+  list-style: none;
+  margin-right: 75px;
+  margin-left: 25px;
 }
 
 .page {
   text-decoration: none;
-  padding-left: 50px;
   color: white;
 }
 
@@ -145,15 +136,6 @@
   padding-bottom: 17px;
 }
 
-@media (min-width: 1045px) {
-  .res-container {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    margin-left: 5px;
-  }
-}
-
 /* projects*/
 .project-container {
   display: flex;
@@ -161,6 +143,7 @@
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
 .card {
   background: white;
   width: 270px;
@@ -210,6 +193,7 @@
   border-color: lightgrey;
   background-color: white;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .fill {

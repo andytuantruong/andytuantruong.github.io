@@ -1,26 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .back {
   background: #181a1b;
 }
-/* navbar */
 
-.navigation-bar {
-  display: flex;
-  justify-content: left;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #242424;
-  padding: 25px;
-  flex-wrap: wrap;
 }
 
-.item-nav {
-  display: inline;
+li {
   list-style: none;
-  margin-right: 75px;
-  margin-left: 25px;
 }
 
-.page {
-  text-decoration: none;
+.nav-menu a {
   color: white;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  color: white;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #242424;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
 /* about */
@@ -86,6 +170,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 .work {
   margin-right: 50px;
@@ -138,11 +223,12 @@
 }
 
 /* projects*/
+
 .project-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .card {
@@ -195,7 +281,7 @@
   border-color: lightgrey;
   background-color: white;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .fill {

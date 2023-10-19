@@ -239,11 +239,6 @@ li {
   border-radius: 25px;
 }
 
-.card:hover {
-  background-color: var(--gray1);
-  color: var(--white);
-}
-
 .card-img1 {
   height: 175px;
   width: 275px;

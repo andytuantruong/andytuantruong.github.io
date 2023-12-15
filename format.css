@@ -360,3 +360,13 @@ li {
 fieldset {
   border: 0;
 }
+
+.warning-container {
+  border: 2px solid #ffc107;
+  background-color: #fff3cd;
+  padding: 20 px;
+  border-radius: 2%;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}

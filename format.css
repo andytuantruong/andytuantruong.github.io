@@ -33,6 +33,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  color: white;
 }
 
 .nav-menu {
@@ -110,15 +111,51 @@ li {
 
 /* about */
 .intro {
-  justify-content: center;
   color: white;
+  padding-top: 125px;
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+.intro-name {
+  color: #00ffff;
+  text-align: left;
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 40px;
+}
+
+.intro-bio {
+  color: white;
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.intro-bio-cont {
+  color: white;
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+.intro-container {
+  margin: 0 auto;
+  max-width: 375px;
+  margin-right: 50px;
+  padding-left: 50px;
+}
+
+.intro-list {
+  list-style-type: disc;
+  color: white;
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 16px;
 }
 
 .about-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
+  margin-left: 75px;
+  max-width: 400px;
+  padding-top: 125px;
 }
 
 .socials {
@@ -150,20 +187,33 @@ li {
   border: 5px solid;
   border-color: #121212;
   margin-bottom: 10px;
-  justify-content: left;
+  justify-content: center;
   overflow: hidden;
 }
 
-.bio {
-  display: flex;
-  text-align: left;
-  padding: 15px;
-  background-color: white;
-  border: 5px solid;
-  border-color: #121212;
-  border-radius: 15px;
-  width: 660px;
-  margin-right: 10px;
+.leftside,
+.rightside {
+  height: 100vh;
+  width: 100%;
+}
+
+.leftside {
+  background-color: #494949;
+}
+.rightside {
+  background-color: #181a1b;
+}
+
+@media screen and (min-width: 768px) {
+  .leftside,
+  .rightside {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .leftside {
+    height: 850px;
+  }
 }
 
 /* Resume */

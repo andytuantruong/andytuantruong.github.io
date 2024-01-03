@@ -17,10 +17,6 @@ header {
   z-index: 1000; /*priority over others*/
 }
 
-li {
-  list-style: none;
-}
-
 .nav-menu a {
   color: white;
   text-decoration: none;
@@ -41,6 +37,7 @@ li {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  list-style: none;
 }
 
 .nav-branding {

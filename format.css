@@ -1,20 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .back {
   background: #181a1b;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #242424;
-  z-index: 1000; /*priority over others*/
 }
 
 .nav-menu a {

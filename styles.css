@@ -322,6 +322,11 @@ form {
   position: relative;
 }
 
+.card a {
+  text-decoration: none;
+  color: var(--black);
+}
+
 .card-img1 {
   height: 175px;
   width: 275px;
@@ -332,10 +337,11 @@ form {
   font-size: 12pt;
   margin: 5px 20px 0px;
 }
-.card-link1 {
-  margin-left: 70px;
-}
 
+.card:hover {
+  background-color: #ffffb2;
+  border-radius: 30px;
+}
 /* contact */
 .message-in {
   width: 200px;

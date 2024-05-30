@@ -141,6 +141,19 @@ form {
 }
 
 /* about */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftside {
+  flex: 1;
+}
+
+.rightside {
+  flex: 1;
+}
+
 .intro {
   color: white;
   padding-top: 125px;
@@ -343,10 +356,6 @@ form {
   border-radius: 30px;
 }
 /* contact */
-.message-in {
-  width: 200px;
-}
-
 .title {
   text-transform: uppercase;
   margin-bottom: 35px;
@@ -388,6 +397,7 @@ form {
 .type-i {
   display: inline-block;
   width: 67%;
+  padding-left: 5px;
 }
 
 .feedback {

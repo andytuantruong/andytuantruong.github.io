@@ -146,14 +146,6 @@ form {
   flex-direction: row;
 }
 
-.leftside {
-  flex: 1;
-}
-
-.rightside {
-  flex: 1;
-}
-
 .intro {
   color: white;
   padding-top: 125px;
@@ -265,9 +257,11 @@ form {
     height: 100vh;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .leftside {
-    height: 850px;
+  .leftside,
+  .rightside {
+    height: 900px;
   }
 }
 

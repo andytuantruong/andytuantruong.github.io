@@ -235,6 +235,17 @@ form {
   overflow: hidden;
 }
 
+.favorite-song {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fav-song-title {
+  font-family: 'Cascadia Code', sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
 .leftside,
 .rightside {
   height: 100vh;

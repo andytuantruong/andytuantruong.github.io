@@ -160,7 +160,7 @@ form {
   white-space: nowrap;
   font-family: 'Cascadia Code', sans-serif;
   color: #00ffff;
-  border-right: 3px solid black;
+  border-right: 3px solid white;
   width: 0;
   animation: typing 1.5s steps(40, end) 1s 1 normal both,
     blink 1.25s step-end infinite;

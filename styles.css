@@ -153,11 +153,31 @@ form {
   text-align: left;
 }
 
+/*blinking name intro*/
 .intro-name {
-  color: #00ffff;
-  text-align: left;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
   font-family: 'Cascadia Code', sans-serif;
-  font-size: 40px;
+  color: #00ffff;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 1.5s steps(40, end) 1s 1 normal both,
+    blink 1.25s step-end infinite;
+  text-align: left;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 87.5%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .intro-bio {

@@ -193,6 +193,13 @@ form {
   font-size: 16px;
   text-align: left;
 }
+.portland-red {
+  color: #ff0000;
+}
+
+.boston-green {
+  color: #4cff4c;
+}
 .intro-container {
   margin: 0 auto;
   max-width: 375px;

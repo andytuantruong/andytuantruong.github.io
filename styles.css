@@ -47,6 +47,9 @@ form {
   width: 400px;
 }
 
+.back {
+  background-color: #181a1b;
+}
 .nav-menu a {
   color: white;
   text-decoration: none;
@@ -319,7 +322,7 @@ form {
 }
 
 @media (max-width: 600px) {
-  body {
+  .resume-bg {
     padding: 10px;
   }
   .sub-head {
@@ -365,8 +368,13 @@ form {
 .project-container {
   display: flex;
   justify-content: center;
-  flex: wrap;
+  flex-wrap: wrap;
   margin-top: 100px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: black;
 }
 
 .card {
@@ -379,11 +387,6 @@ form {
   position: relative;
 }
 
-.card a {
-  text-decoration: none;
-  color: var(--black);
-}
-
 .card-img1 {
   height: 175px;
   width: 275px;
@@ -394,11 +397,14 @@ form {
   font-size: 12pt;
   margin: 5px 20px 0px;
 }
+.card-link1 {
+  margin-left: 70px;
+}
 
 .card:hover {
-  background-color: #ffffb2;
-  border-radius: 30px;
+  background-color: #fdfd96;
 }
+
 /* contact */
 .title {
   text-transform: uppercase;

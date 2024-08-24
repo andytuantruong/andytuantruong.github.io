@@ -193,11 +193,8 @@ form {
   font-size: 16px;
   text-align: left;
 }
-.portland-red {
-  color: #ff0000;
-}
 
-.boston-green {
+.state-color {
   color: #4cff4c;
 }
 .intro-container {
@@ -375,7 +372,8 @@ form {
 }
 
 .btn-link:hover {
-  background-color: yellow;
+  background-color: #b3d9ff;
+  color: black;
 }
 
 .btn-link::after {
@@ -404,6 +402,10 @@ form {
   color: black;
 }
 
+.project-link:hover {
+  color: black;
+}
+
 .card {
   background: var(--white);
   width: 270px;
@@ -429,7 +431,7 @@ form {
 }
 
 .card:hover {
-  background-color: #fdfd96;
+  background-color: #b3d9ff;
 }
 
 /* contact */

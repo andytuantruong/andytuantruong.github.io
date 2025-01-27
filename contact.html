@@ -12,43 +12,49 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
   </head>
   <body class="back form-body">
     <header>
-      <nav class="navbar">
-        <a class="nav-branding" href="index.html"> & Y </a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"> About </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html"> Résumé </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html"> Projects </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"> Contact </a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">&Y</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
-    <script src="navbarScript.js"></script>
     <main>
       <form class="reg-form" action="">
         <h1 class="title">Contact Form</h1>
         <div class="warning-container">
-          Warning: This form is for design purposes at the moment. For
-          inquiries, please reach out via andytuantruong@gmail.com
+          Warning: This form is for design purposes at the moment. <br />For
+          inquiries, please reach out via: andytuantruong@gmail.com
         </div>
         <div class="fill">
           <label class="text-box" for="firstname">First name:</label>
@@ -64,12 +70,7 @@
         </div>
         <div class="fill">
           <label class="text-box" for="message">Message:</label>
-          <textarea
-            class="type-i"
-            type="text"
-            name="message"
-            id="message"
-          ></textarea>
+          <textarea class="type-i" name="message" id="message"></textarea>
         </div>
         <div class="space">
           <fieldset>
@@ -92,5 +93,6 @@
         </div>
       </form>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

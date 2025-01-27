@@ -12,40 +12,46 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="back">
-    <header>
-      <nav class="navbar">
-        <a class="nav-branding" href="index.html"> & Y </a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"> About </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html"> Résumé </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html"> Projects </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"> Contact </a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+  <body class="main-container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">&Y</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <script src="navbarScript.js"></script>
-
+      </div>
+    </nav>
     <main>
       <div class="project-container">
-        <div class="card" id="card">
+        <div class="card">
           <a
             class="project-link"
             href="https://github.com/andytuantruong/ChocAnApp"
@@ -56,13 +62,15 @@
               src="https://andytuantruong.github.io/img_ref/c++_icon.png"
               alt="c++ icon"
             />
-            <h1>ChocAn App</h1>
-            <p class="card-text1">
-              A mock healthcare service app created in group in CS300. This app
-              is made for those who are battling a chocolate addiction. This
-              data processing system allows users to seek quality care and keep
-              track treatments under this subscription.
-            </p>
+            <div class="card-body">
+              <h1>ChocAn App</h1>
+              <p class="card-text1">
+                A mock healthcare service app created in group in CS300. This
+                app is made for those who are battling a chocolate addiction.
+                This data processing system allows users to seek quality care
+                and keep track treatments under this subscription.
+              </p>
+            </div>
           </a>
         </div>
         <div class="card">
@@ -76,13 +84,15 @@
               src="https://andytuantruong.github.io/img_ref/html_icon.png"
               alt="html icon"
             />
-            <h1>Portfolio</h1>
-            <p class="card-text1">
-              If you're reading this, you've made it to my website portfolio! It
-              features a bio section, résumé, projects I have worked on, and a
-              contact form. This website is put together using HTML, CSS, and
-              JavaScript and deployed on Github Pages.
-            </p>
+            <div class="card-body">
+              <h1>Portfolio</h1>
+              <p class="card-text1">
+                If you're reading this, you've made it to my website portfolio!
+                It features a bio section, résumé, projects I have worked on,
+                and a contact form. This website is put together using HTML,
+                CSS, and JavaScript and deployed on Github Pages.
+              </p>
+            </div>
           </a>
         </div>
         <div class="card">
@@ -96,16 +106,18 @@
               src="https://andytuantruong.github.io/img_ref/c_icon.png"
               alt="c icon"
             />
-            <h1>Malloc Clone</h1>
-            <p class="card-text1">
-              This was an assignment for rebuilding the stdlib.h C Library
-              functions being malloc, calloc, realloc, and free; additionally
-              reproducing the strdup function. This is for practice with heap
-              management using a doubly-linked list in CS333 OS.
-            </p>
+            <div class="card-body">
+              <h1>Malloc Clone</h1>
+              <p class="card-text1">
+                This was an assignment for rebuilding the stdlib.h C Library
+                functions being malloc, calloc, realloc, and free; additionally
+                reproducing the strdup function. This is for practice with heap
+                management using a doubly-linked list in CS333 OS.
+              </p>
+            </div>
           </a>
         </div>
-        <div class="card" id="card">
+        <div class="card">
           <a
             class="project-link"
             href="https://github.com/andytuantruong/LoL-Esports-KDA-extractor"
@@ -116,15 +128,18 @@
               src="https://andytuantruong.github.io/img_ref/python_icon.png"
               alt="python icon"
             />
-            <h1>Esports Data Extraction Tool</h1>
-            <p class="card-text1">
-              Data tools designed to project player kills and assists for League
-              of Legends matches (esports) analyzing historical data. Currently
-              developing a data visualzaiton model based on information fetched.
-            </p>
+            <div class="card-body">
+              <h1>Esports Data Extraction Tool</h1>
+              <p class="card-text1">
+                Data tools designed to project player kills and assists for
+                League of Legends matches (esports) analyzing historical data.
+                Currently developing a data visualization model based on
+                information fetched.
+              </p>
+            </div>
           </a>
         </div>
-        <div class="card" id="card">
+        <div class="card">
           <a
             class="project-link"
             href="https://github.com/WonderTix/WonderTix"
@@ -135,16 +150,19 @@
               src="https://andytuantruong.github.io/img_ref/swagger_icon.png"
               alt="swagger icon"
             />
-            <h1>WonderTix</h1>
-            <p class="card-text1">
-              Capstone Project at PSU (Winter-Spring term 2023) <br />
-              A ticketing sales and CRM platform built for the Portland
-              Playhouse. I worked on the backend, reformatting and implementing
-              the Swagger annotations for the API endpoints.
-            </p>
+            <div class="card-body">
+              <h1>WonderTix</h1>
+              <p class="card-text1">
+                Capstone Project at PSU (Winter-Spring term 2023) <br />
+                A ticketing sales and CRM platform built for the Portland
+                Playhouse. I worked on the backend, reformatting and
+                implementing the Swagger annotations for the API endpoints.
+              </p>
+            </div>
           </a>
         </div>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

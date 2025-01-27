@@ -2,132 +2,139 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andy Truong's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../img_ref/index_favicon.ico" />
+    <title>Andy Truong Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../img_ref/index-favicon.ico" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.cdnfonts.com/css/cascadia-code"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <header>
-    <nav class="navbar">
-      <a class="nav-branding" href="index.html"> & Y </a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"> About </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="resume.html"> Résumé </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html"> Projects </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html"> Contact </a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-    <script src="navbarScript.js"></script>
-  </header>
-
-  <div class="row gx-0">
-    <div class="col-md-6 gx-0">
-      <div class="leftside">
-        <div class="intro-container">
-          <h1 class="intro">Hello, my name is <br /></h1>
-          <h1 class="intro-name">Andy Truong.</h1>
-          <h1 class="intro-bio">
-            I use a data-driven approach to create effective solutions to
-            achieve optimal outcomes. <br /><br />
-          </h1>
-          <div class="intro-bio-cont">
-            I'm a software developer based in
-            <span class="state-color">Portland</span>,
-            <span class="state-color">Oregon</span>, actively seeking
-            opportunities in either Oregon or
-            <span class="state-color">Boston</span>,
-            <span class="state-color">Massachusetts</span>. <br /><br />
-            My curiosity towards continuous learning makes me adaptable to the
-            ever-evolving field of technology. I am passionate about a variety
-            of aspects within the technology landscape, including but not
-            limited to data analytics, UX & UI design, web development, and
-            automation. I am eager to apply and further develop my skills in
-            these areas. <br /><br />
-            Outside of these, I enjoy:
-          </div>
-          <ul class="intro-list">
-            <li>playing video games 🎮</li>
-            <li>a savory bowl of pho 🍜</li>
-            <li>health & wellness 🏋️‍♂️🏃‍♂️</li>
-            <li>shooting hoops 🏀</li>
+  <body class="main-container">
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">&Y</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="col-md-6 gx-0">
-      <div class="rightside">
-        <div class="about-container">
-          <div>
-            <img
-              class="pfp"
-              src="https://andytuantruong.github.io/img_ref/andy_pfp.jpg"
-              alt="Andy's profile picture"
-            />
-            <div class="socials-container">
-              <a
-                class="socials"
-                href="https://www.linkedin.com/in/andytuantruong/"
-                target="_blank"
-                ><img
-                  class="s_icon"
-                  src="https://andytuantruong.github.io/img_ref/linkedin_icon.png"
-                  alt="linkedin icon"
-                />
-              </a>
-              <a
-                class="socials"
-                href="https://github.com/andytuantruong"
-                target="_blank"
-                ><img
-                  class="s_icon"
-                  src="https://andytuantruong.github.io/img_ref/github_icon.png"
-                  alt="github icon"
-              /></a>
-              <a class="socials" href="mailto: andytuantruong@gmail.com"
-                ><img
-                  class="s_icon"
-                  src="https://andytuantruong.github.io/img_ref/gmail_icon.png"
-                  alt="gmail icon"
-              /></a>
+    </header>
+    <main class="container hero-section">
+      <section class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h1 class="intro">Hello, my name is...<br /></h1>
+          <h1 class="intro-name">Andy Truong.</h1>
+          <p class="intro-bio">
+            I am a software developer passionate about creating impactful
+            solutions through data-driven development. I am based in
+            <span class="location">Portland</span>, Oregon and I'm actively
+            seeking opportunities in <span class="location">Boston</span>,
+            Massachusetts to grow my expertise and contribute to innovative
+            projects.
+          </p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-4">
+                <h5 class="text-primary mb-3">Technical Focus:</h5>
+                <ul class="interest-list">
+                  <li>📊 Data Analytics & Visualization</li>
+                  <li>🤖 Process Automation</li>
+                  <li>🎨 UX/UI Design Systems</li>
+                  <li>🌐 Full-Stack Development</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="mb-5">
+                <h5 class="text-primary mb-3">Personal Interests:</h5>
+                <ul class="interest-list">
+                  <li>🏀🎮 Competitive Sports & Gaming</li>
+                  <li>🍔🍜 Food Culture Exploration</li>
+                  <li>🏋️🥗 Health & Wellness</li>
+                  <li>🐕🦴 Spending Time with My Dog</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="favorite-song">
-            <div class="fav-song-title">🎼 Song of the month:</div>
+
+          <div class="spotify-widget">
+            <h6 class="text-light mb-3">Song of the Month</h6>
             <iframe
               style="border-radius: 12px"
-              src="https://open.spotify.com/embed/track/5ScbulRnixQ2XAdvrPMFjz?utm_source=generator"
-              width="85%"
-              height="150px"
-              frameborder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
+              src="https://open.spotify.com/embed/track/5ScbulRnixQ2XAdvrPMFjz"
+              width="100%"
+              height="100"
+              allow="encrypted-media"
+            >
+            </iframe>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="col-lg-6">
+          <div class="text-center">
+            <img
+              src="img_ref/andy_pfp.jpg"
+              alt="Andy Truong"
+              class="profile-image"
+            />
+            <div class="social-links">
+              <a href="https://linkedin.com/in/andytuantruong" target="_blank">
+                <img
+                  src="img_ref/linkedin_icon.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+              <a href="https://github.com/andytuantruong" target="_blank">
+                <img
+                  src="img_ref/github_icon.png"
+                  alt="GitHub"
+                  class="social-icon"
+                />
+              </a>
+              <a href="mailto:andytuantruong@gmail.com">
+                <img
+                  src="img_ref/gmail_icon.png"
+                  alt="Email"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

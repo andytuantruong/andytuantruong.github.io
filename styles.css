@@ -175,6 +175,7 @@
 /* Resume Page */
 .resume-bg {
   background-color: #181a1b;
+  font-family: 'Inter', sans-serif;
   color: #fff;
   margin: 0;
   padding: 20px;
@@ -352,6 +353,7 @@
 .form-body {
   text-align: center;
   background-color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
   padding: 20px;
   min-height: 100vh;
   display: flex;

@@ -51,7 +51,7 @@
     </header>
     <main class="container hero-section">
       <section class="row align-items-center g-5 fade-in">
-        <div class="col-lg-6">
+        <div class="col-lg-6 d-flex flex-column">
           <h1 class="intro">Hello, my name is...<br /></h1>
           <h1 class="intro-name">Andy Truong.</h1>
           <p class="intro-bio">
@@ -64,45 +64,46 @@
           </p>
 
           <div class="row">
-            <div class="col-md-6">
-              <div class="mb-4">
-                <h5 class="text-primary mb-3">Technical Focus:</h5>
-                <ul class="interest-list">
-                  <li>📊 Data Analytics & Visualization</li>
-                  <li>🤖 Process Automation</li>
-                  <li>🎨 UX/UI Design Systems</li>
-                  <li>🌐 Full-Stack Development</li>
-                </ul>
+            <div class="col-12">
+              <div class="combined-interests-container">
+                <h3 class="section-title">My Interests</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="interest-section technical-container">
+                      <h5 class="text-primary mb-3">Technical</h5>
+                      <ul class="interest-list">
+                        <li class="interest-item">
+                          📊 Data Analytics & Visualization
+                        </li>
+                        <li class="interest-item">🤖 Process Automation</li>
+                        <li class="interest-item">🎨 UX/UI Design Systems</li>
+                        <li class="interest-item">🌐 Full-Stack Development</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="interest-section personal-container">
+                      <h5 class="text-primary mb-3">Personal</h5>
+                      <ul class="interest-list">
+                        <li class="interest-item">
+                          🏀🎮 Competitive Sports & Gaming
+                        </li>
+                        <li class="interest-item">
+                          🍔🍜 Food Culture Exploration
+                        </li>
+                        <li class="interest-item">🏋️🥗 Health & Wellness</li>
+                        <li class="interest-item">
+                          🐕🦴 Spending Time with My Dog
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="col-md-6">
-              <div class="mb-5">
-                <h5 class="text-primary mb-3">Personal Interests:</h5>
-                <ul class="interest-list">
-                  <li>🏀🎮 Competitive Sports & Gaming</li>
-                  <li>🍔🍜 Food Culture Exploration</li>
-                  <li>🏋️🥗 Health & Wellness</li>
-                  <li>🐕🦴 Spending Time with My Dog</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="spotify-widget">
-            <h6 class="text-light mb-3">Song of the Month</h6>
-            <iframe
-              style="border-radius: 12px"
-              src="https://open.spotify.com/embed/track/5ScbulRnixQ2XAdvrPMFjz"
-              width="100%"
-              height="100"
-              allow="encrypted-media"
-              loading="lazy"
-            >
-            </iframe>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-lg-2 d-flex flex-column">
           <div class="text-center">
             <img
               src="img_ref/andy_pfp.jpg"
@@ -132,6 +133,17 @@
                 />
               </a>
             </div>
+          </div>
+          <div class="spotify-widget mt-4">
+            <h6 class="text-light mb-3">Song of the Month</h6>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/5ScbulRnixQ2XAdvrPMFjz"
+              width="100%"
+              height="100"
+              allow="encrypted-media"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>

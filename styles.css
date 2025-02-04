@@ -105,34 +105,89 @@
 .intro-bio {
   color: white;
   max-width: 600px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .interest-list {
   list-style: none;
   padding-left: 0;
-}
-
-.interest-list li {
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 0.75rem;
 }
 
-.profile-image {
+.interest-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #2d2d2d;
+  border-radius: 20px;
+  font-size: 0.85em;
+  margin: 0.25rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  line-height: 1.3;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  min-width: 0;
+}
+
+.combined-interests-container {
+  background-color: #242424;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 0 0 2rem 0;
+  border: 1px solid #ffffff1a;
+  max-width: 1200px;
   width: 100%;
-  max-width: 400px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: 'Cascadia Code', monospace;
+  color: #1e90ff;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+}
+
+.technical-container,
+.personal-container {
+  border-left: 4px solid;
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+  height: 100%;
+  padding-right: 0.5rem;
+}
+
+.technical-container {
+  border-color: #1e90ff;
+}
+
+.personal-container {
+  border-color: #ffa500;
+}
+
+.profile-image {
+  width: 75%;
+  max-width: 300px;
   border-radius: 16px;
+  margin-bottom: 1.5rem;
 }
 
 .social-links {
-  display: inline-flex;
+  display: flex;
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 1rem 0 2rem 0;
   background-color: white;
   padding: 10px 15px;
   border-radius: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .social-icon,
@@ -154,8 +209,10 @@
 .spotify-widget {
   background: #2d2d2d;
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 1rem;
+  margin: 0 auto 2rem auto;
+  max-width: 350px;
+  width: 100%;
 }
 
 .spotify-widget iframe:hover {
@@ -168,8 +225,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0; /* Reduced padding */
+  padding: 30px 20px;
   width: 100%;
+  box-sizing: border-box;
+  align-items: stretch;
 }
 
 .hero-section .container {
@@ -186,6 +245,32 @@
 .hero-section .col-lg-6 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.col-lg-6.d-flex {
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .combined-interests-container {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .interest-item {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8em;
+    margin: 0.25rem;
+  }
+
+  .profile-image {
+    width: 75%;
+    margin-top: 1.5rem;
+  }
+
+  .intro-name {
+    font-size: 2.75rem;
+  }
 }
 
 /* Resume Page */

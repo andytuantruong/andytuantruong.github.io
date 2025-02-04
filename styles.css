@@ -1,3 +1,19 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 2.2s ease forwards;
+}
+
+.dark-theme {
+  background: #1a1a1a;
+}
+
 .main-container {
   background-color: #1a1a1a;
   font-family: 'Inter', sans-serif;
@@ -25,18 +41,18 @@
 .nav-link {
   color: #f8f9fa !important;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
   position: relative;
 }
 
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -5px;
-  left: 0;
   width: 0;
   height: 2px;
-  background: #1e90ff;
+  bottom: -2px;
+  left: 0;
+  background-color: #4f46e5;
   transition: width 0.3s ease;
 }
 

@@ -54,27 +54,56 @@
       </div>
     </header>
     <main class="container hero-section">
-      <div class="reg-form fade-in">
-        <h1 class="title">Contact Form</h1>
-        <div class="warning-container">
-          Warning: This form is for design purposes at the moment. <br />For
-          inquiries, please reach out via: andytuantruong@gmail.com
-        </div>
+      <form
+        class="reg-form fade-in"
+        action="https://formsubmit.co/b5d48e776bbc2a52875e592e6a66862a"
+        method="POST"
+      >
+        <input type="text" name="_honey" style="display: none" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Portfolio Contact Form Submission"
+        />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://andytuantruong.github.io/thanks.html"
+        />
+        <h1 class="title text-center">Contact Form</h1>
         <div class="fill">
           <label class="text-box" for="firstname">First name:</label>
-          <input class="type-i" type="text" name="firstname" id="firstname" />
+          <input
+            class="type-i"
+            type="text"
+            name="First Name"
+            id="firstname"
+            required
+          />
         </div>
         <div class="fill">
           <label class="text-box" for="lastname">Last name:</label>
-          <input class="type-i" type="text" name="lastname" id="lastname" />
+          <input
+            class="type-i"
+            type="text"
+            name="Last Name"
+            id="lastname"
+            required
+          />
         </div>
         <div class="fill">
           <label class="text-box" for="email">Email:</label>
-          <input class="type-i" type="email" name="email" id="email" />
+          <input class="type-i" type="email" name="email" id="email" required />
         </div>
         <div class="fill">
           <label class="text-box" for="message">Message:</label>
-          <textarea class="type-i" name="message" id="message"></textarea>
+          <textarea
+            class="type-i"
+            name="Message"
+            id="message"
+            required
+          ></textarea>
         </div>
         <div class="space">
           <fieldset>
@@ -95,9 +124,8 @@
           <input class="prim-btn" type="submit" value="Submit" />
           <input class="sec-btn" type="reset" value="Reset" />
         </div>
-      </div>
+      </form>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>

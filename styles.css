@@ -363,6 +363,7 @@
   margin-top: 15px;
   color: #1a1a1a;
   font-size: 2rem;
+  text-align: center;
 }
 
 /* Contact Form Page */
@@ -475,6 +476,9 @@
 
 .bottom {
   margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 fieldset {
@@ -482,13 +486,24 @@ fieldset {
   justify-content: center;
 }
 
-.warning-container {
-  border: 2px solid #ffc107;
-  background-color: #fff3cd;
-  padding: 15px;
+.return-btn {
+  font-family: 'Cascadia Code', monospace;
+  font-size: 16px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 30px;
   border-radius: 5px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #856404;
-  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 185px;
+  height: 40px;
+}
+
+.return-btn:hover {
+  background-color: orange;
+  color: black;
 }

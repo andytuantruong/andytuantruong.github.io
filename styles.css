@@ -425,7 +425,7 @@
 
 .feedback {
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   color: #1a1a1a;
   margin-bottom: 15px;
@@ -433,8 +433,8 @@
 
 .r-btn {
   display: block;
-  text-align: left;
-  margin-left: 26px;
+  text-align: center;
+  margin: 10px 0;
   font-size: 16px;
   color: #1a1a1a;
 }

@@ -11,20 +11,20 @@
 }
 
 .dark-theme {
-  background: #1a1a1a;
+  background-color: #1a1a1a;
+  color: #f8f9fa;
 }
 
 .main-container {
-  background-color: #1a1a1a;
-  font-family: 'Inter', sans-serif;
-  color: #f8f9fa;
-  line-height: 1.6;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  background-color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  color: #f8f9fa;
+  line-height: 1.6;
 }
 
 /* navbar */
@@ -591,4 +591,211 @@ fieldset {
 .return-btn:hover {
   background-color: orange;
   color: black;
+}
+
+/* Thanks Page */
+.thank-you-message {
+  font-family: 'Cascadia Code', monospace;
+  text-align: center;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  margin-left: 1rem;
+  padding: 4px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #a0a4f9; /* flash prevention */
+}
+
+.theme-toggle.transitions-enabled {
+  transition: background-color 0.3s;
+}
+
+.theme-toggle[data-theme='light'] {
+  background-color: #a0a4f9;
+}
+
+.theme-toggle[data-theme='dark'] {
+  background-color: #4f46e5;
+}
+
+.theme-toggle-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.theme-toggle-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateX(24px);
+}
+
+.theme-toggle.transitions-enabled .theme-toggle-thumb {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.theme-toggle[data-theme='light'] .theme-toggle-thumb {
+  transform: translateX(24px);
+  background-color: #fff;
+}
+
+.theme-toggle[data-theme='dark'] .theme-toggle-thumb {
+  transform: translateX(4px);
+  background-color: #333;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+/* Light Theme Styles */
+.light-theme {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.light-theme .navbar {
+  background-color: #f8f9fa !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.light-theme .nav-link,
+.light-theme .intro-bio {
+  color: #1a1a1a !important;
+}
+
+.light-theme .intro-bio span {
+  color: #006400;
+}
+
+/* Theme Container -- index.html */
+.light-theme .combined-interests-container {
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+}
+
+.light-theme .interest-item {
+  background-color: #e5e7eb;
+  color: #1a1a1a;
+}
+
+.light-theme .spotify-widget {
+  background-color: #f8f9fa;
+}
+
+.light-theme .social-links {
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+}
+
+/* Theme Container -- resume.html */
+.light-theme .resume-bg {
+  background-color: #ffffff;
+}
+
+.dark-theme .resume-bg {
+  background-color: #1a1a1a;
+}
+
+.light-theme .intro-name {
+  color: #1e90ff;
+  border-right: 3px solid #1a1a1a;
+}
+
+.dark-theme .intro-name {
+  color: #1e90ff;
+  border-right: 3px solid #f8f9fa;
+}
+
+.light-theme .reg-form {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.dark-theme .reg-form {
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #242424;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+  color: #f8f9fa;
+}
+
+.dark-theme .reg-form label {
+  color: #f8f9fa;
+}
+
+.dark-theme .reg-form input,
+.dark-theme .reg-form textarea {
+  background-color: #333;
+  color: #f8f9fa;
+  border: 1px solid #ffffff1a;
+}
+
+.dark-theme .reg-form input::placeholder,
+.dark-theme .reg-form textarea::placeholder {
+  color: #cccccc;
+}
+
+.light-theme .reg-form .title {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.dark-theme .reg-form .title {
+  color: #f8f9fa;
+}
+
+.light-theme .reg-form .feedback {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.dark-theme .reg-form .feedback {
+  color: #f8f9fa;
+}
+
+/* Navbar Brand Hover Effect */
+.navbar-brand {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #1e90ff;
+}
+
+.light-theme .navbar-brand {
+  color: #1a1a1a;
+}
+
+.light-theme .navbar-brand:hover {
+  transform: scale(1.05);
+  color: #006400;
 }

@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.add('preload');
   const themeToggles = [
     document.getElementById('theme-toggle'),
     document.getElementById('theme-toggle-small'),
@@ -13,21 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const applyTheme = (theme) => {
+    document.documentElement.classList.remove('light-theme', 'dark-theme');
+    document.documentElement.classList.add(`${theme}-theme`);
     document.body.classList.remove('light-theme', 'dark-theme');
     document.body.classList.add(`${theme}-theme`);
     themeToggles.forEach((toggle) => toggle.setAttribute('data-theme', theme));
     localStorage.setItem('theme', theme);
   };
 
-  applyTheme(getTheme());
-
-  // preload for flash prevention
-  setTimeout(() => {
-    document.body.classList.remove('preload');
-    themeToggles.forEach((toggle) =>
-      toggle.classList.add('transitions-enabled')
-    );
-  }, 100);
+  const initialTheme = getTheme();
+  applyTheme(initialTheme);
+  themeToggles.forEach((toggle) => {
+    toggle.setAttribute('data-theme', initialTheme);
+  });
 
   themeToggles.forEach((toggle) => {
     toggle.addEventListener('click', () => {

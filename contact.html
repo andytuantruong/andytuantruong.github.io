@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="main-container dark-theme">
+  <body class="main-container">
     <header class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container d-flex justify-content-between">
         <a class="navbar-brand" href="index.html">&Y</a>
@@ -84,7 +84,7 @@
     </header>
     <main class="container hero-section">
       <form
-        class="reg-form fade-in"
+        class="reg-form fade-in contact-form"
         action="https://formsubmit.co/b5d48e776bbc2a52875e592e6a66862a"
         method="POST"
       >
@@ -101,25 +101,27 @@
           value="https://andytuantruong.github.io/thanks.html"
         />
         <h1 class="title text-center">Contact Form</h1>
-        <div class="fill">
-          <label class="text-box" for="firstname">First name:</label>
-          <input
-            class="type-i"
-            type="text"
-            name="First Name"
-            id="firstname"
-            required
-          />
-        </div>
-        <div class="fill">
-          <label class="text-box" for="lastname">Last name:</label>
-          <input
-            class="type-i"
-            type="text"
-            name="Last Name"
-            id="lastname"
-            required
-          />
+        <div class="fill d-flex justify-content-between">
+          <div class="w-50 pe-2">
+            <label class="text-box" for="firstname">First name:</label>
+            <input
+              class="type-i"
+              type="text"
+              name="First Name"
+              id="firstname"
+              required
+            />
+          </div>
+          <div class="w-50 ps-2">
+            <label class="text-box" for="lastname">Last name:</label>
+            <input
+              class="type-i"
+              type="text"
+              name="Last Name"
+              id="lastname"
+              required
+            />
+          </div>
         </div>
         <div class="fill">
           <label class="text-box" for="email">Email:</label>

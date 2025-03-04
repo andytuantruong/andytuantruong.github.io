@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank You!</title>
+    <title>Thank You! | Andy Truong</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -12,6 +12,10 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
       href="https://fonts.cdnfonts.com/css/cascadia-code"
@@ -57,13 +61,13 @@
               <a class="nav-link" href="index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resume.html">Resume</a>
+              <a class="nav-link" href="index.html#resume">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link" href="index.html#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="index.html#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -82,23 +86,20 @@
         </div>
       </div>
     </header>
-    <main
-      class="container d-flex justify-content-center align-items-center min-vh-100"
-    >
-      <div class="thank-you-message">
-        <h1>Thank You!</h1>
-        <p>
+
+    <main class="thank-you-section">
+      <div class="thank-you-container">
+        <h1 class="thank-you-title">Thank You!</h1>
+        <p class="thank-you-message">
           Your message has been sent successfully.<br />
           I'll get back to you soon!
         </p>
-        <a
-          href="index.html"
-          class="return-btn mt-4 d-inline-block text-decoration-none"
-        >
-          Return Home
+        <a href="index.html" class="return-btn">
+          <i class="fas fa-home home-icon"></i> Return Home
         </a>
       </div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="theme.js"></script>
   </body>

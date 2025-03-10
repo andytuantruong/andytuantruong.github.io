@@ -713,19 +713,24 @@ textarea.type-i {
 }
 
 .btn-link:hover {
-  background-color: rgba(30, 144, 255, 0.1);
-  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .btn-link::after {
-  content: '\25BC';
+  content: '\25B2';
   font-size: 0.8em;
   margin-left: var(--space-sm);
   transition: transform var(--transition-normal);
 }
 
-.btn-link[aria-expanded='true']::after {
+.btn-link[aria-expanded='false']::after {
   transform: rotate(180deg);
+}
+
+.btn-link[aria-expanded='false'] {
+  background-color: rgba(30, 144, 255, 0.05);
+  color: var(--text-color);
 }
 
 .btn-link[aria-expanded='true'] {
@@ -736,7 +741,7 @@ textarea.type-i {
 .badge {
   font-size: var(--text-xs);
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   margin-left: auto;
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);

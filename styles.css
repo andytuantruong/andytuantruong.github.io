@@ -282,13 +282,6 @@ h6 {
   margin: var(--space-lg) 0;
   border: 1px solid var(--border-color);
   box-shadow: 0 4px 12px var(--shadow-color);
-  transition: transform var(--transition-normal),
-    box-shadow var(--transition-normal);
-}
-
-.combined-interests-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px var(--shadow-color);
 }
 
 /* ====== 8. PROFILE & SOCIAL LINKS ====== */
@@ -298,11 +291,6 @@ h6 {
   border-radius: var(--radius-lg);
   margin: var(--space-md) auto;
   box-shadow: 0 8px 20px var(--shadow-color);
-  transition: transform var(--transition-normal);
-}
-
-.profile-image:hover {
-  transform: scale(1.02);
 }
 
 .social-links {
@@ -402,11 +390,6 @@ h6 {
   color: var(--dark-text);
   transition: transform var(--transition-fast),
     box-shadow var(--transition-fast);
-}
-
-.interest-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 /* ====== 10. FORM STYLES ====== */
